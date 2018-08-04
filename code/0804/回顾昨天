@@ -1,0 +1,25 @@
+回顾昨天
+函数
+是一种封装的,可复用的一段代码
+函数的声明
+function 函数名([$arg1,...]) {
+	函数体
+	return;
+}
+参数个数不受限制,支持参数有默认值,默认值一般放在最后
+函数的传值,赋值传值,引用传值(破坏了封装性,不推荐)
+函数的执行权,当执行完函数内部的最后一条语句,或遇到return时,函数会交回执行权
+函数内调用全局变量, gloabl修饰符
+调用动态函数名,call_user_func, call_user_func_array
+检测变量,isset和empty
+检测常量 defined
+检测函数 function_exists
+超级全局变量
+$_GET,$_POST,$_REQUEST,$_SERVER,$_ENV,$GLOABLS
+$_GET和$_POST之间的区别
+
+字符串
+字符串的三种定义方式
+字符串的转义 \
+常用函数
+字符查找,字符长度,字符替换
