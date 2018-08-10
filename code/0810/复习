@@ -1,0 +1,50 @@
+include, require, include_once, require_once
+包含文件的php语句
+include '文件名';
+include('文件名');
+include和require包含文件,require报错会中断程序
+include_once和require_once,先检测是否被包含过,没有就包含,有就忽略,require_once报错错会中断
+
+json扩展
+json_encode
+编码,将数组或者对象转成json字符串
+json_decode
+解码,将json字符串转成对象或者数组
+
+文件处理的函数
+fopen(文件名, 模式)
+模式 r, r+, w, w+, a, a+
+fread, 读取指定字节长度
+fgets,读取一行文本,遇到换行符结束
+feof,检测是否到文件末尾
+fwrite,写入文件
+fclose 关闭文件
+file_get_contents
+file_put_contents, FILE_APPEND 追加模式
+
+命名空间
+更文件夹类似
+语法
+namespace 命名空间
+放在文件最上部
+
+非限定名称   new Cat
+限定名称     new Foo\Cat
+完全限定名称 new \Foo\Bar\Cat
+
+动态的命名空调
+$str = 'Foo\Cat'
+它是和完全限定名称一样, 等价于\Foo\Cat
+
+命名空间的使用 use
+use Foo\Bar\Cat
+use function Foo\Bar\eat
+
+new Cat
+eat()
+
+别名 alias
+
+use Foo\Bar\Cat as NewCat
+new NewCat
+
