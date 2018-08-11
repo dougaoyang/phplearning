@@ -1,0 +1,21 @@
+{
+	"name": "gaoyang/test",
+	"description": "test package",
+	"version": "1.0.0",
+	"type": "library",
+    "require": {
+    },
+    "autoload": {
+    	"psr-4": {
+    		"App\\": "App/",
+    		"Root\\": "Root/",
+    		"Sys\\": "src/"
+    	},
+    	"classmap": [
+    		"src/Foo"
+    	],
+    	"files": [
+    		"src/functions.php"
+    	]
+    }
+}
