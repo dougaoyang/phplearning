@@ -12,6 +12,7 @@
 
 include 'vendor/autoload.php';
 
+// http://localhost/phplearning/code/0811/framework/index.php?c=user&a=info
 if (!isset($_GET['c']) || !isset($_GET['a'])) {
 	exit('路由错误');
 }
