@@ -1,3 +1,8 @@
+<?php
+if (!defined('CAN_ACCESS')) {
+	exit;
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>

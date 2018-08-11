@@ -1,4 +1,7 @@
 <?php
+if (!defined('CAN_ACCESS')) {
+	exit;
+}
 // 连接数据库
 $data = include 'model.php';
 

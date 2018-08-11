@@ -1,4 +1,7 @@
 <?php
+if (!defined('CAN_ACCESS')) {
+	exit;
+}
 
 try {
 	$dsn = 'mysql:host=localhost;dbname=test';
