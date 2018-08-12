@@ -11,6 +11,7 @@
 */
 
 include 'vendor/autoload.php';
+print_r($_SERVER);exit;
 
 // http://localhost/phplearning/code/0811/framework/index.php?c=user&a=info
 if (!isset($_GET['c']) || !isset($_GET['a'])) {
