@@ -10,9 +10,9 @@ class User extends Model
 	public function getUserInfo($id)
 	{
 		$sql = 'select * from users where id='.$id;
-		$res = $this->query($sql);
+		$user = $this->query($sql);
 
-		print_r($res);
+		return $user;
 	}
 
 }
