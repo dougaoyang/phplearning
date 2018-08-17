@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.header {height: 100px; background-color:gray; color:#fff;}
+		.footer {height: 100px; background-color:blue; color:#fff;}
+		.content {height: 200px;margin: 10px 0; border: 1px solid #333;}
+	</style>
+</head>
+<body>
+	<div class="header">头部 <button class="btn">按钮</button></div>
+
+	<div class="content">
+		
+	</div>
+
+	<div class="footer">尾部</div>
+	<script src="http://tpblog.local.cn/static/js/jquery.min.js"></script>
+	<script>
+		$('.btn').on('click', function() {
+			/*$.ajax({
+				url: '01.php',
+				data: {id: 1},
+				type: 'post',
+				dataType: 'json',
+				success: function(data, textStatus, jqXHR) {
+					console.log(data)
+					$('.content').html('<h1>'+data.rand+'</h1>')
+				},
+				error: function(XMLHttpRequest, textStatus, errorThrown) {
+					console.log(XMLHttpRequest)
+					console.log(textStatus)
+					console.log(errorThrown)
+				},
+				complete: function() {
+					console.log('complete')
+				}
+			});*/
+			/*$.get('01.php', {id: 1}, function(data) {
+				$('.content').html(data)
+			})*/
+			/*$.post('01.php', {id: 1}, function(data) {
+				$('.content').html(data)
+			})*/
+			$.getJSON('01.php', {id: 1}, function(data) {
+				$('.content').html('<h1>'+data.rand+'</h1>')
+			})
+
+
+		})
+	</script>
+</body>
+</html>

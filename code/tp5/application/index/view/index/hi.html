@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	变量输出
+	{literal}
+    {$name}
+    {$email}
+	{/literal}
+	<br>
+	{$name}
+	<br>
+	{$email}
+	<br>
+	{$arr.name}
+	<br>
+	{$arr['name']}
+	<br>
+	{$arr2.zhang.name}
+	<br>
+	{$arr2['zhang']['name']}
+	<br>
+	默认值: {$mobile|default='未定义'}
+	<br>
+	{$arr.age|default=23}
+	<br>
+	系统变量 {$Think.get.page}
+	<br>
+	使用函数 {$name|md5|upper} 
+	<br>
+	{$html}
+	<br>
+	{$html|raw}
+	<br>
+	{$a + $b}
+	<br>
+	循环
+	<br>
+	{foreach $list as $key=>$value } 
+    {$value.name}~{$value.age}<br>
+	{/foreach}
+	<br>
+	{volist name="list" id="value" offset="1"}
+    {$value.name}~{$value.age}<br>
+	{/volist}
+	<br>
+	比较标签
+	<br>
+	{eq name="name" value="hello"}value{/eq}
+	<br>
+	{if $name=='hello'}
+		value
+	{/if}
+	<br>
+	{in name="id" value="10,20,30"}
+	id在范围内
+	{/in}
+
+</body>
+</html>

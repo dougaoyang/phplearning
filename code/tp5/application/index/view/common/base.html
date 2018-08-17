@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	{block name="header"}
+		<div class="header">
+			导航栏
+		{block name="header_inner"}
+			导航栏内部
+		{/block}
+		</div>
+	{/block}
+	
+	{block name="body"}
+		<div class="body">
+			<h1>主体</h1>
+			<h1>我是公共的</h1>
+		</div>
+	{/block}
+
+	{block name="footer"}
+		<div class="footer">
+			我是尾部
+		</div>
+	{/block}
+</body>
+</html>

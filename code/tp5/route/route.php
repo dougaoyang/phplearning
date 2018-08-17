@@ -10,10 +10,10 @@
 // +----------------------------------------------------------------------
 
 // Route::rule('hello', 'index/Index/hello', 'GET|POST');
-Route::rule('hello', 'app\index\controller\Index@hello', 'GET|POST');
+Route::rule('hello$', 'app\index\controller\Index@hello', 'GET|POST');
 Route::get('hi', 'index/Index/hi')->name('my_hi'); //快捷写法
 
-// 动态路由,路由传参数
+// 动态路由,路由传参数 \w+
 Route::get('news/:id/info', 'index/News/info')
 	->pattern(['id'=>'\d+'])
 	->name('news_info');
@@ -23,3 +23,8 @@ Route::get('news/list', 'index/News/list')->name('news_list');
 Route::get('think', function() {
 	return 'hello think';
 });
+
+Route::get('extend', 'index/Index/extend')->name('template_extend');
+Route::get('extend2', 'index/Index/extend2')->name('template_extend2');
+
+
